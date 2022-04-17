@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible"content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>
+       Tech2etc Ecommerce 
+   </title>
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+   <link rel="stylesheet" href="./style.css">
+</head>
+ 
+<body> 
+     
+    <section id="header">
+        <a href="#"><img src="imges/helios1.pngg.png" width="100" 
+ class="logo" alt=""></a>
+        <div> 
+            <ul id="navbar">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="shop.html">Shop</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact-header">
+        
+
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE,We love to hear from you!</p>
+
+    </section>
+     
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="imges/helios1.pngg.png" alt="">
+        <h4><b>Contact</b></h4>
+        <p><strong>Address: </strong>#3/9, Narachi, KGF, Kolar, Karnataka</p>
+        <p><strong>Phone: </strong> +91 81978 97845/+91 93430 10119</p>
+        <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+        
+     <div class="follow">
+         <h4><b>Follow us</b></h4>
+           <div class="icon">
+             <i class="fab fa-facebook-f"></i>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-instagram"></i>
+             <i class="fab fa-pinterest-p"></i>
+             <i class="fab fa-youtube"></i>
+           </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4><b>About</b></h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+        <h4><b>My Account</b></h4>
+        <a href="signup.html">Sign Up</a>
+        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+        <a href="cart.html">View Cart</a>
+        <a href="cart.html">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+        <h4><b>Install App</b></h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="imges/img/pay/app.jpg" alt="">
+            <img src="imges/img/pay/play.jpg" alt="">
+
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="imges/img/pay/pay.png" alt="">
+    </div>
+
+    <div class="copyright">
+        <p>© 2022, HELIOS - HTML CSS Ecommerce website</p>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit" class="normal">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
